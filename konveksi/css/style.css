@@ -1,0 +1,126 @@
+/* My Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Teko:wght@300;400;500;600;700&display=swap");
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+
+/* root */
+
+:root {
+  --bg: #cecfd1;
+  --color: #141311;
+  --primary: #e9ebea;
+}
+
+/* My Styles */
+
+body {
+  font-family: "Teko", sans-serif;
+  background: var(--primary);
+  font-size: 16px;
+}
+
+/* Navbar */
+
+header {
+  background: var(--bg);
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header ul li a:hover {
+  color: var(--primary);
+}
+
+/* Home Page */
+
+.home-page::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+  filter: blur(5px);
+}
+
+.text-konveksi h1 {
+  font-size: 6rem;
+  color: var(--bg);
+}
+
+.get-contact {
+  background: var(--bg);
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 25px;
+}
+
+.get-contact a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+/* Gallery */
+
+.gallery h1{
+    position: absolute;
+    top: 10%;
+    font-size: 4rem;
+}
+
+.container-photos {
+    width: 85%;
+    height: 70%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-img {
+    overflow: hidden;
+}
+
+.img-img img {
+    transform: scale(1);
+    transition: 1s;
+}
+
+.img-img img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Product */
+
+.product-container {
+    margin-top: 7rem;
+}
+
+.product {
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+}
+
+/* Location */
+
+#location h1,
+#contact h1 {
+    font-size: 4rem;
+}
+
+/* Contact */
+
+#contact {
+    width: 100%;
+    height: 80vh;
+}
